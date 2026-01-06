@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { ChevronDown, ChevronUp, BarChart3 } from 'lucide-react'
 import type { SleepEntry } from '../../types'
 import { SleepTimelineChart } from './charts/SleepTimelineChart'
-import { SleepScatterChart } from './charts/SleepScatterChart'
 import { SleepStackedChart } from './charts/SleepStackedChart'
 import { SleepPieCharts } from './charts/SleepPieCharts'
 
@@ -40,16 +39,6 @@ export function SleepStats({ entries }: SleepStatsProps) {
             </h4>
             <SleepTimelineChart entries={entries} />
           </div>
-
-          {/* Graphique des horaires */}
-          {/*<div>
-            <h4 className="text-sm font-medium text-dark-300 mb-4">
-              Horaires de coucher et réveil
-            </h4>
-            <SleepScatterChart entries={entries} />
-          </div>*/}
-
-          {/* Graphique des durées empilées */}
           <div>
             <h4 className="text-sm font-medium text-dark-300 mb-4">
               Durée de sommeil par jour (30 derniers jours)

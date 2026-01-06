@@ -5,6 +5,25 @@ import type { SleepEntry, SleepType, QualityLevel } from '../../types'
 import { SLEEP_TYPE_LABELS, QUALITY_LABELS } from '../../types'
 import { calculateSleepDuration, formatDuration, getDefaultNightDate } from '../../utils/dateUtils'
 
+// Fonction pour obtenir la couleur en fonction du niveau (1=rouge, 5=vert)
+const getQualityColor = (level: QualityLevel, isSelected: boolean): string => {
+  const baseColors = {
+    1: 'bg-red-600 hover:bg-red-700 text-white',
+    2: 'bg-orange-600 hover:bg-orange-700 text-white',
+    3: 'bg-yellow-600 hover:bg-yellow-700 text-white',
+    4: 'bg-lime-600 hover:bg-lime-700 text-white',
+    5: 'bg-green-600 hover:bg-green-700 text-white',
+  }
+  
+  const baseStyle = baseColors[level]
+  
+  if (isSelected) {
+    return `${baseStyle} scale-125 border-2 border-grey shadow-lg`
+  }
+  
+  return baseStyle
+}
+
 interface SleepFormProps {
   onSave: (entries: Omit<SleepEntry, 'id' | 'createdAt' | 'updatedAt'>[]) => Promise<void>
   initialEntry?: SleepEntry
@@ -103,7 +122,7 @@ export function SleepForm({ onSave, initialEntry, onCancel }: SleepFormProps) {
       <div className="card">
         <div className="flex items-center gap-2 mb-4">
           <Calendar className="text-primary-500" size={20} />
-          <h3 className="text-lg font-semibold text-white">Date</h3>
+          <h3 className="text-lg font-semibold">Date</h3>
         </div>
 
         <input
@@ -129,7 +148,7 @@ export function SleepForm({ onSave, initialEntry, onCancel }: SleepFormProps) {
 
           <div className="flex items-center gap-2 mb-6">
             <Moon className="text-primary-500" size={20} />
-            <h3 className="text-lg font-semibold text-white">
+            <h3 className="text-lg font-semibold text-grey-100">
               Période de sommeil {entries.length > 1 ? `#${index + 1}` : ''}
             </h3>
           </div>
@@ -150,16 +169,16 @@ export function SleepForm({ onSave, initialEntry, onCancel }: SleepFormProps) {
                 ))}
               </select>
             </div>
-
+            
             {/* Durée calculée */}
-            <div className="flex items-end">
+            {/*<div className="flex items-end">
               <div className="px-4 py-2 bg-dark-700 rounded-lg">
                 <span className="text-sm text-dark-400">Durée estimée: </span>
                 <span className="text-lg font-semibold text-primary-400">
                   {formatDuration(calculateSleepDuration(entry.bedTime, entry.wakeTime))}
                 </span>
               </div>
-            </div>
+            </div>*/}
 
             {/* Heure de coucher */}
             <div>
@@ -198,11 +217,7 @@ export function SleepForm({ onSave, initialEntry, onCancel }: SleepFormProps) {
                     key={level}
                     type="button"
                     onClick={() => updateEntry(entry.tempId, 'sleepQuality', level)}
-                    className={
-                      entry.sleepQuality === level
-                        ? 'quality-btn-selected'
-                        : 'quality-btn-unselected'
-                    }
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${getQualityColor(level, entry.sleepQuality === level)}`}
                     title={QUALITY_LABELS[level]}
                   >
                     {level}
@@ -221,9 +236,7 @@ export function SleepForm({ onSave, initialEntry, onCancel }: SleepFormProps) {
                     key={level}
                     type="button"
                     onClick={() => updateEntry(entry.tempId, 'wakeQuality', level)}
-                    className={
-                      entry.wakeQuality === level ? 'quality-btn-selected' : 'quality-btn-unselected'
-                    }
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${getQualityColor(level, entry.wakeQuality === level)}`}
                     title={QUALITY_LABELS[level]}
                   >
                     {level}

@@ -10,6 +10,26 @@ Application Electron de suivi de sommeil personnel avec stockage 100% local et c
 - **Multi-plateforme** : Windows, macOS et Linux
 - **No-data** : Aucune donnée n'est envoyée à l'extérieur
 
+## 📸 Captures d'écran
+
+<p align="center">
+  <a href="./img/sleep_save.png">
+    <img src="./img/sleep_save.png" width="400" alt="Formulaire de saisie">
+  </a>
+  <a href="./img/sleep_stat.png">
+    <img src="./img/sleep_stat.png" width="400" alt="Graphiques et statistiques">
+  </a>
+</p>
+
+<p align="center">
+  <a href="./img/humeur.png">
+    <img src="./img/humeur.png" width="400" alt="Module Humeur">
+  </a>
+  <a href="./img/agenda.png">
+    <img src="./img/agenda.png" width="400" alt="Module Agenda">
+  </a>
+</p>
+
 ## ✨ Fonctionnalités
 
 ### 🌙 Sommeil (Complet)
