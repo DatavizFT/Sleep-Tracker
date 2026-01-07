@@ -13,6 +13,7 @@ Application Electron de suivi de sommeil personnel et de soutien aux changement 
 - **Approche Modulaire** : Faciliter le developpement d'autre module (Activité physique adaptée / reseaux sociaux...)
 - **Partage médical** : Possibilité de stocker ces données chiffrées sur un serveur pour visualisation médical avec clé patient
 - **Exportation** : exportation pdf / choix des graphiques
+- **Evolution** : Version mobile
 ## 📸 Captures d'écran
 
 <p align="center">
