@@ -1,6 +1,6 @@
 # Sleep Tracker
 
-Application Electron de suivi de sommeil personnel avec stockage 100% local et chiffré.
+Application Electron de suivi de sommeil personnel et de soutien aux changement d'habitudes en vue d'amélioration du sommeil avec stockage 100% local et chiffré.
 
 ## 🎯 Caractéristiques
 - **Santé Publique - Prévention** : Apporter de la connaissance au public
@@ -10,6 +10,7 @@ Application Electron de suivi de sommeil personnel avec stockage 100% local et c
 - **Gratuit** : Aucun abonnement ni publicité
 - **Multi-plateforme** : Windows, macOS et Linux
 - **No-data** : Aucune donnée n'est envoyée à l'extérieur
+- **Approche Modulaire** : Faciliter le developpement d'autre module (Activité physique adaptée / reseaux sociaux...)
 - **Partage médical** : Possibilité de stocker ces données chiffrées sur un serveur pour visualisation médical avec clé patient
 - **Exportation** : exportation pdf / choix des graphiques
 ## 📸 Captures d'écran
