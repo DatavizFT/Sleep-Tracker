@@ -3,7 +3,7 @@
 Application Electron de suivi de sommeil personnel et de soutien aux changement d'habitudes en vue d'amélioration du sommeil avec stockage 100% local et chiffré.
 
 ## 🎯 Caractéristiques
-- **Santé Publique - Prévention** : Apporter de la connaissance au public
+- **Santé Publique - Prévention** : Apporter de la connaissance au public / Aide a l'amélioration du sommeil (Reseau morphée)
 - **Approche Centré Patient** : La personne decide des actions a mettre en place ou non, de partager ces informations...
 - **Privacy-first** : Controle utilisateur complet des données. Toutes les données sont stockées localement et chiffrées (AES-256)
 - **Open-source** : Code source disponible projet ouvert aux contributions
