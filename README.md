@@ -3,13 +3,15 @@
 Application Electron de suivi de sommeil personnel avec stockage 100% local et chiffré.
 
 ## 🎯 Caractéristiques
-
+- **Santé Publique - Prévention** : Apporter de la connaissance au public
+- **Approche Centré Patient** : La personne decide des actions a mettre en place ou non, de partager ces informations...
 - **Privacy-first** : Toutes les données sont stockées localement et chiffrées (AES-256)
-- **Open-source** : Code source disponible et modifiable
+- **Open-source** : Code source disponible projet ouvert aux contributions
 - **Gratuit** : Aucun abonnement ni publicité
 - **Multi-plateforme** : Windows, macOS et Linux
 - **No-data** : Aucune donnée n'est envoyée à l'extérieur
-
+- **Partage médical** : Possibilité de stocker ces données chiffrées sur un serveur pour visualisation médical avec clé patient
+- **Exportation** : exportation pdf / choix des graphiques
 ## 📸 Captures d'écran
 
 <p align="center">
