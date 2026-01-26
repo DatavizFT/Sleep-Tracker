@@ -17,7 +17,7 @@ Ce projet s'inscrit dans une démarche de santé publique numérique :
 - **Gratuit** : Aucun abonnement ni publicité
 - **Multi-plateforme** : Windows, macOS et Linux
 - **Approche Modulaire** : Faciliter le developpement d'autre module (Activité physique adaptée / reseaux sociaux...)
-- **Partage médical** : Possibilité de stocker ces données chiffrées sur un serveur pour visualisation médical avec clé patient
+- **Partage médical (A envisager)** : Possibilité de stocker ces données chiffrées sur un serveur pour visualisation médical avec clé patient
 - **Exportation** : exportation pdf / choix des graphiques
 - **Evolution** : Version mobile
 
