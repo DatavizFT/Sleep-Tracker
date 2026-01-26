@@ -13,6 +13,13 @@ Application Electron de suivi de sommeil personnel et de soutien aux changement 
 - **Partage médical** : Possibilité de stocker ces données chiffrées sur un serveur pour visualisation médical avec clé patient
 - **Exportation** : exportation pdf / choix des graphiques
 - **Evolution** : Version mobile
+   ## 🏥 Vision Santé Publique
+   
+   Ce projet s'inscrit dans une démarche de santé publique numérique :
+   - Privacy-by-design pour la protection des données de santé
+   - Architecture modulaire pour un suivi global du patient
+   - Open-source pour favoriser l'innovation collaborative
+   - Interopérabilité avec le système de soins (export sécurisé)
 ## 📸 Captures d'écran
 
 <p align="center">
